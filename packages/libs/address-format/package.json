@@ -1,0 +1,17 @@
+{
+  "name": "@test/address-format",
+  "version": "1.0.0",
+  "description": "Tiny utils for formatting wallet addresses",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "microbundle --target node --format cjs,es --typescript --no-sourcemap",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "typescript": "^5.0.0"
+  }
+}
